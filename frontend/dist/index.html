@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FSE chat room</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Toastr style -->
+    <link href="css/plugins/toastr/toastr.min.css" rel="stylesheet">
+
+    <!-- Gritter -->
+    <link href="js/plugins/gritter/jquery.gritter.css" rel="stylesheet">
+
+    <link href="css/animate.css" rel="stylesheet">
+</head>
+    <body class="body">
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+            <a class="navbar-brand text-center text-light" href="#">FSE CHAT GROUP</a>     
+        </nav>
+
+        <div class="main_div container" id='main_div'>
+          
+          <div  style="margin-top: 180px;">
+            <div style="margin-bottom: 10px;"><h5 class='text-primary'>LOGIN</h5></div>
+
+              <div class="error_message"></div>
+              <form name="login_form">
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Password" required>
+                  </div>
+                  <button type="button" class="btn btn-primary" id="login_button" >Log in</button><br>
+                  <span>Not signed in? <a href="./register.html"> register here</a> </span>
+                </form>
+          </div>
+      </div>
+    </body>
+<script src="../node_modules/axios/dist/axios.min.js"></script>
+<script type="text/javascript" src="../js/index.js"></script>
+</html>

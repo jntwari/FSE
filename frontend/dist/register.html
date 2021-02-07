@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FSE chat room</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Toastr style -->
+    <link href="css/plugins/toastr/toastr.min.css" rel="stylesheet">
+
+    <!-- Gritter -->
+    <link href="js/plugins/gritter/jquery.gritter.css" rel="stylesheet">
+
+    <link href="css/animate.css" rel="stylesheet">
+</head>
+    <body class="body">
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+            <a class="navbar-brand text-center text-light" href="#">FSE CHAT GROUP</a>     
+        </nav>
+
+        <div class="main_div container" style="margin-top: 180px;" id='main_div'>
+          <div style="margin-bottom: 10px;"><h5 class='text-primary'>REGISTER</h5></div>
+          <div class="">
+              <form name="login_form">                
+                <div class="error_message text-danger" ><h5 id='error_message'></h5></div>
+
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" required>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Full name</label>
+                    <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Enter your name" required>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Password" required>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Confirm password</label>
+                    <input type="password" class="form-control" id="confirm_password" placeholder=" confirm Password" required>
+                  </div>
+
+
+                  <button type="button" class="btn btn-primary" id="register_button" > Register </button><br>
+                  <span>Already have an account? <a href="./index.html">Click here to login </a> </span>
+                </form>
+          </div>
+      </div>
+    </body>
+
+<script src="../node_modules/axios/dist/axios.min.js"></script>
+<script type="text/javascript" src="../js/register.js"></script>
+</html>
